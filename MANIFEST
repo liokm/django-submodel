@@ -1,0 +1,7 @@
+setup.py
+submodel/__init__.py
+submodel/admin.py
+submodel/fields.py
+README.rst
+LICENSE
+CHANGES
