@@ -22,8 +22,10 @@ Usage
     from submodel.fields import SubModelField
 
 
-    # define (field_name, model_field_instance) tuples in "fields" parameter in SubModelFiel, similar as normal Model definition
-    # if SubModelField such as pref field is newly added to an existed model, you may want to use south to migrate the schema
+    # Define (field_name, model_field_instance) tuples in "fields" parameter in SubModelFiel,
+    #   similar as normal Model definition
+    # If SubModelField such as pref field is newly added to an existed model,
+    #   you may want to use south to migrate the schema
     class UserProfile(models.Model):
         realname = models.CharField(max_length=100)
         pref = SubModelField(u'user preference',
