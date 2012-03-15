@@ -22,7 +22,7 @@ Usage
     from submodel.fields import SubModelField
 
 
-    # Define (field_name, model_field_instance) tuples in "fields" parameter in SubModelFiel,
+    # Define (field_name, model_field_instance) tuples in "fields" parameter in SubModelField,
     #   similar as normal Model definition
     # If SubModelField such as pref field is newly added to an existed model,
     #   you may want to use south to migrate the schema
