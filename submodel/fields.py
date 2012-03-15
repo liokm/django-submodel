@@ -46,7 +46,7 @@ class SubModelField(models.TextField):
                 setattr(self_._fk, self.name, None)
                 self_._fk.save()
             class Meta:
-                verbose_name = self.verbose_name
+                verbose_name = self.verbose_name or self.name
             attrs = dict(self.fields)
             # TODO need to ensure field types?
             assert '_fk' not in attrs, u'name "_fk" is reserved for pk for submodel.'
